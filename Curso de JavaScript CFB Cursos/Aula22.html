@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang = "pt - br">
+
+	<head>
+
+		<title> CFB Cursos - Javascript </title>
+		
+		<meta charset = "utf - 8">
+		
+		<script>
+
+			var i ; // Máximo 10
+			
+			try
+			{
+				i = prompt( "Digite um valor: " ) ;
+
+				if ( i > 10 ) { throw new Error( "Valor inválido , o valor máximo é 10<br>" ) ; }
+			}
+
+			catch( e )
+			{
+				console.log( "Erro: " + e.message ) ;
+				i = 10 ;
+			}
+
+			finally
+			{
+				document.write( "Valor: " + i ) ;
+			}
+
+			/*
+				try
+				{
+					i = prompt( "Digite um valor: " ) ;
+
+					if ( i > 10 ) { throw new Error( "Valor inválido , o valor deve ser menor ou igual a 10<br>" ) ; }
+
+					document.write( "Valor: " + i ) ;
+				}
+
+				catch( e )
+				{
+					document.write( "Erro: " + e.message ) ;
+				}
+
+				finally
+				{
+					document.write( "<br>Fim do tratamento" ) ;
+				}
+			
+				try
+				{
+					document.writi( "CFB Cursos" ) ;
+				} 
+
+				catch ( e )
+				{
+					document.write( "Erro: " + e.message ) ;
+
+					console.log( "Mensagem de erros: " + e.message ) ;
+				}
+
+				try
+				{
+					i = 10 / 0 ;
+
+					document.write( "Erro: " + i ) ;
+				} 
+
+				catch ( e )
+				{
+					//document.write( "Erro: " + e.message ) ;
+
+					//console.log( "Mensagem de erros: " + e.message ) ;
+				}
+			*/
+			
+		</script>
+		
+		</head>
+
+	<body>
+
+</body>
+
+</html>

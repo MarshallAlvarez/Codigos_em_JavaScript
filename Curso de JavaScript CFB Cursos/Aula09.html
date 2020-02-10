@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang = "pt - br">
+
+	<head>
+
+		<title> CFB Cursos - Javascript </title>
+		
+		<meta charset = "utf - 8">
+		
+		<script>
+
+			var nota = 95 ;
+			var res ;
+
+			/*
+				Aprovadamente Aprovado 	 == true if nota >= 95 
+			 	Aprovado    			 == true if nota >= 60 && nota < 95 
+			 	Em recuperacao 			 == true if nota >= 40 && nota < 60
+			 	Reprovado                == true if nota >= 20 && nota < 40
+				Reprovadamente reprovado == true if nota < 20
+			*/
+
+			if      ( nota >= 95              ) { res = "Aprovadamente aprovado"   ; }
+			else if ( nota >= 60 && nota < 95 ) { res = "Aprovado"                 ; }
+			else if ( nota >= 40 && nota < 60 ) { res = "Em recuperação"           ; }
+			else if ( nota >= 20 && nota < 40 ) { res = "Reprovado"                ; }
+			else                                { res = "Reprovadamente reprovado" ; }
+
+			document.write( res ) ;
+
+		</script>
+		
+		</head>
+
+	<body>
+
+</body>
+
+</html>
